@@ -1,14 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="mn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Миний анхны веб хуудас</title>
+    <meta name="description" content="Турбат Ганболдын товч танилцуулга, ур чадвар болон холбоо барих мэдээлэл.">
+    <title>Турбат Ганболд | Танилцуулга</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Үндсэн цэс">
+            <a class="brand" href="#top" aria-label="Нүүр хуудас">TG<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">Тухай</a>
+                <a href="#skills">Ур чадвар</a>
+                <a href="#contact">Холбоо барих</a>
+            </div>
+        </nav>
+    </header>
 
-    <h1>Сайн байна уу!</h1>
-    <p>Энэ бол миний анхны HTML хуудас.</p>
+    <main id="top">
+        <section class="hero container" aria-labelledby="intro-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Сайн байна уу, намайг</p>
+                <h1 id="intro-title">Турбат <span>Ганболд</span></h1>
+                <p class="lead">Энгийн, ойлгомжтой, хүн бүрд хүртээмжтэй веб туршлага бүтээхийг зорьдог суралцагч.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#contact">Холбогдох</a>
+                    <a class="button button-quiet" href="#about">Дэлгэрэнгүй <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <aside class="profile-card" aria-label="Товч мэдээлэл">
+                <div class="avatar" aria-hidden="true">TG</div>
+                <div>
+                    <p class="profile-label">Одоогийн зорилго</p>
+                    <p class="profile-value">Шинэ зүйл сурах</p>
+                </div>
+                <div>
+                    <p class="profile-label">Чиглэл</p>
+                    <p class="profile-value">Веб хөгжүүлэлт</p>
+                </div>
+            </aside>
+        </section>
 
+        <section class="section container" id="about" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="eyebrow">01 / Танилцуулга</p>
+                <h2 id="about-title">Өөрийн тухай</h2>
+            </div>
+            <div class="about-grid">
+                <p class="about-intro">Сайн байна уу! Энэ бол миний анхны HTML хуудас. Вебийн үндсэн ойлголтуудыг судалж, сурсан зүйлээ бодит жижиг төслүүдээр туршин хөгжүүлж байна.</p>
+                <div class="about-details">
+                    <p>Зорилго минь цэвэр код бичиж, хэрэглэгчид ашиглахад хялбар, утга агуулгатай дижитал бүтээгдэхүүн хийх юм.</p>
+                    <p>Багаас эхэлж, өдөр бүр нэг алхмаар ахих хандлагатай.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">02 / Чадварууд</p>
+                    <h2 id="skills-title">Суралцаж буй ур чадвар</h2>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <span class="skill-number">01</span>
+                        <h3>HTML</h3>
+                        <p>Семантик бүтэц, хүртээмжтэй, зөв зохион байгуулалттай веб хуудас.</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-number">02</span>
+                        <h3>CSS</h3>
+                        <p>Өнгө, зай, typography болон бүх дэлгэцэд зохицох responsive загвар.</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-number">03</span>
+                        <h3>Суралцах хүсэл</h3>
+                        <p>Шинэ технологийг тууштай судалж, мэдлэгээ бүтээлээр бататгах.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact container" id="contact" aria-labelledby="contact-title">
+            <div>
+                <p class="eyebrow">03 / Холбоо</p>
+                <h2 id="contact-title">Хамтдаа бүтээе.</h2>
+                <p>Сонирхолтой санаа эсвэл санал байвал надтай холбогдоорой.</p>
+            </div>
+            <a class="button button-primary" href="mailto:turbat.ganbold@example.com">Имэйл илгээх <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2024 Турбат Ганболд</p>
+            <p>Миний анхны веб хуудас.</p>
+        </div>
+    </footer>
 </body>
 </html>
