@@ -1,14 +1,189 @@
+
 <!DOCTYPE html>
 <html lang="mn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Миний анхны веб хуудас</title>
+    <title>Миний танилцуулга</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #1d4ed8;
+        }
+
+        .hero p {
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .skills {
+            padding: 35px 8%;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 10px #00000010;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            header {
+                padding: 18px 5%;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 45px 16px;
+            }
+
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .skills {
+                padding: 25px 16px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Сайн байна уу!</h1>
-    <p>Энэ бол миний анхны HTML хуудас.</p>
+    <header>
+        <h2>MY PORTFOLIO</h2>
+
+        <nav>
+            <a href="#home">Нүүр</a>
+            <a href="#about">Миний тухай</a>
+            <a href="#skills">Ур чадвар</a>
+            <a href="#contact">Холбоо барих</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Сайн байна уу!</h1>
+        <h2>Намайг Ганболд Төрбат гэдэг.</h2>
+        <p>Би IT чиглэлээр суралцдаг.</p>
+        <a href="#about" class="button">Миний тухай</a>
+    </section>
+
+    <section class="skills" id="about">
+        <h2>Миний тухай</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Боловсрол</h3>
+                <p>Математик: 90</p>
+                <p>Монгол хэл: 90</p>
+                <p>Биеийн тамир: 95</p>
+            </div>
+
+            <div class="card">
+                <h3>Хэлний мэдлэг</h3>
+                <p>Монгол хэл</p>
+                <p>Англи хэл — B1</p>
+            </div>
+
+            <div class="card">
+                <h3>Сонирхол</h3>
+                <p>Спорт</p>
+                <p>Хөгжим</p>
+                <p>Видео тоглоом</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Холбоо барих</p>
+        <p>Улаанбаатар хот</p>
+        <p>&copy; 2026 My Portfolio</p>
+    </footer>
 
 </body>
 </html>
